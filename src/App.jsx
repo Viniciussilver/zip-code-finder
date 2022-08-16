@@ -10,7 +10,7 @@ import {
   Input,
   Button,
   Main,
-  Span,
+  Span
 } from "./styles";
 
 function App() {
@@ -19,16 +19,20 @@ function App() {
 
   async function handleSearch() {
     if (input.current.value === "") {
-      alert("Preencha algum cep!");
-      return;
+
+      return alert("Preencha algum cep!");
+      
     }
 
     try {
       const { data: response } = await api.get(`${input.current.value}/json`);
       setCep(response);
 
-    } catch {
-      alert("erro ao buscar");
+    } catch(error) {
+
+      alert(error.message)
+      
+      //alert("erro ao buscar");
     }
   }
 
@@ -47,7 +51,7 @@ function App() {
         </Button>
       </ContainerSearch>
 
-      {cep != "" && (
+      {cep != '' && (
         <Main>
           <h2>CEP: {cep.cep}</h2>
 

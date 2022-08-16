@@ -27,7 +27,6 @@ export const ContainerSearch= styled.div`
     display:flex;
     align-items:center;
     border-radius:8px;
-    
 `;
 
 export const Input= styled.input`
@@ -66,8 +65,6 @@ export const Main= styled.main`
     align-items:center;
     padding:10px;
   
-    
-
     h2{
         font-size:39px;
     }
