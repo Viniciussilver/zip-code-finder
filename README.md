@@ -1,6 +1,6 @@
 ## zip-code-finder
 
-<h4>Este projeto eu desenvolvi para praticar e entender melhor como funciona o consumo de Api com Axios...</h4>
+<p>Este projeto eu desenvolvi com o intuito de praticar o consumo de api com Axios...</p>
 
 <h2>💻Tecnologias</h2>
  <ul>
